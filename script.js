@@ -15,7 +15,7 @@ const getSum = () => {
 	}
 	
 	const tr = document.createElement("tr")
-	tr.class = "price"
+	tr.class = "total-value"
 	
 	const td = document.createElement("td")
 	td.colSpan = 2;
