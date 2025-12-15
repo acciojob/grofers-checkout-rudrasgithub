@@ -2,7 +2,6 @@ const getSumBtn = document.createElement("button")
 getSumBtn.append("Get Total Price")
 document.body.appendChild(getSumBtn);
 const table = document.querySelector("table")
-const newRow  = document.createElement("tr")
 
 const getSum = () => {
 	let prices = document.querySelectorAll(".prices")
@@ -10,6 +9,12 @@ const getSum = () => {
 	for(let price of prices) {
 	  sum+=parseFloat(price.textContent) || 0;
 	}
+	const existingTotalRow = document.querySelector('.total-price-row')
+	if(existingTotalRow) {
+		existingTotalRow.remove();
+	}
+	const newRow  = document.createElement("tr")
+	newRow.classList.add('total-price-row');
 	newRow.innerHTML = `<td>Total Price: ${sum}</td>`
 	table.appendChild(newRow)
 };
