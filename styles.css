@@ -1,6 +1,20 @@
-
-/* Your CSS Code here. */
 .total-price-row {
     font-weight: bold;
     background-color: #f0f0f0; /* Light gray background */
+    border-top: 2px solid #000; /* Adds a top border to the total row */
+}
+
+.total-price-row td {
+    text-align: center; /* Centers the text in the cell */
+    padding: 10px; /* Adds padding around the text */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are collapsed */
+}
+
+th, td {
+    padding: 8px; /* Adds padding to table cells */
+    border: 1px solid #ddd; /* Adds a border to table cells */
 }
