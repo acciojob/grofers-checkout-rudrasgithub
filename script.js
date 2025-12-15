@@ -1,7 +1,7 @@
 const getSumBtn = document.createElement("button")
 getSumBtn.append("Get Total Price")
 document.body.appendChild(getSumBtn);
-const table = document.querySelector("table")
+const table = document.querySelector("table");
 
 const getSum = () => {
 	let prices = document.querySelectorAll(".price")
@@ -15,7 +15,7 @@ const getSum = () => {
 	}
 	
 	const tr = document.createElement("tr")
-	tr.class = "total-value"
+	tr.id = "ans"
 	
 	const td = document.createElement("td")
 	td.colSpan = 2;
